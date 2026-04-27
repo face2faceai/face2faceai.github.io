@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Face2FaceAI — Horizontal Logo Lockup
+  Scalable vector for YouTube marketing materials and general branding.
+
+  COLORS
+    Icon background ............. #1C1B1F  (Material dark surface)
+    Left face / "AI" accent ..... #D0BCFF  (lavender)
+    Right face .................. #E8DEF8  (light lavender)
+    Arrow, sparkle, wordmark .... #FFFFFF  (white)
+
+  FONT
+    Roboto Bold (700) with Arial / Helvetica Neue fallback.
+    Download Roboto at fonts.google.com for accurate rendering.
+    To embed the font or outline text, open in Inkscape or Illustrator
+    and use Text → Convert to Path before exporting for video.
+
+  VARIANTS
+    Transparent background (this file) — overlay on dark video.
+    Full dark background: add <rect width="560" height="140" fill="#1C1B1F"/>
+    as the first child of <svg> (text is already white).
+
+  SIZES
+    This file uses viewBox="0 0 560 140".  Scale freely — it's a vector.
+    Suggested export sizes:
+      YouTube thumbnail badge   400 × 100 px
+      Video watermark           280 ×  70 px
+      End screen / intro card  1120 × 280 px (2×)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140">
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+       ICON  (140 × 140 circle)
+       Source geometry matches Android adaptive icon (108 × 108 viewport).
+       Elements are translated by (16, 16) to center them inside the box.
+  ════════════════════════════════════════════════════════════════════════ -->
+
+  <!-- Circular icon background -->
+  <circle cx="70" cy="70" r="70" fill="#1C1B1F"/>
+
+  <g transform="translate(16, 16)">
+
+    <!-- Left face — source (lavender) -->
+    <circle cx="36" cy="54" r="14" fill="#D0BCFF"/>
+    <!-- Single eye (matches app icon) -->
+    <circle cx="32" cy="50" r="2" fill="#1C1B1F"/>
+    <!-- Smile -->
+    <path d="M30,58 Q36,63 42,58"
+          stroke="#1C1B1F" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Right face — target with transferred expression (lighter lavender) -->
+    <circle cx="72" cy="54" r="14" fill="#E8DEF8"/>
+    <!-- Single eye (matches app icon) -->
+    <circle cx="68" cy="50" r="2" fill="#1C1B1F"/>
+    <!-- Same smile (expression transferred) -->
+    <path d="M66,58 Q72,63 78,58"
+          stroke="#1C1B1F" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Transfer arrow (left → right, white) -->
+    <path d="M48,54 L57,54"
+          stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <polygon points="56,50 62,54 56,58" fill="#FFFFFF"/>
+
+    <!-- AI sparkle — 5-pointed star above arrow, centered at (54, 43) -->
+    <path d="M54,38 L55.5,42 L59.5,42 L56.5,44.5 L57.5,48.5
+             L54,46 L50.5,48.5 L51.5,44.5 L48.5,42 L52.5,42 Z"
+          fill="#FFFFFF"/>
+
+  </g>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+       WORDMARK
+       "Face2Face" in white, "AI" in brand lavender (#D0BCFF).
+  ════════════════════════════════════════════════════════════════════════ -->
+  <text x="158" y="84"
+        font-family="'Roboto', 'Helvetica Neue', Arial, sans-serif"
+        font-size="52"
+        font-weight="700"
+        letter-spacing="-0.5">
+    <tspan fill="#FFFFFF">Face2Face</tspan><tspan fill="#D0BCFF">AI</tspan>
+  </text>
+
+</svg>
