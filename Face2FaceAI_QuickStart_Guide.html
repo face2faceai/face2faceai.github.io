@@ -14,21 +14,16 @@
     ul.task-list{list-style: none;}
   </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#6750A4">
+  <meta name="theme-color" content="#1C1B1F">
   <style>
+    /* Palette matched to face2faceai.com (dark theme, light text) */
     :root {
-      --bg: #ffffff;
-      --fg: #1c1b1f;
-      --accent: #6750a4;
-      --rule: #e4e1ec;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #1c1b1f;
-        --fg: #e6e1e9;
-        --accent: #d0bcff;
-        --rule: #322f37;
-      }
+      --bg:      #1c1b1f;
+      --surface: #2b2930;
+      --fg:      #e8def8;  /* lavender body text */
+      --heading: #ffffff;  /* white title + emphasis */
+      --accent:  #d0bcff;  /* purple */
+      --rule:    rgba(208, 188, 255, 0.14);
     }
     * { box-sizing: border-box; }
     html { -webkit-text-size-adjust: 100%; }
@@ -46,7 +41,7 @@
       font-size: 1.55rem;
       line-height: 1.25;
       margin: 0.2rem 0 1.2rem;
-      color: var(--accent);
+      color: var(--heading);
     }
     h2 {
       font-size: 1.22rem;
@@ -59,16 +54,16 @@
     p { margin: 0.7rem 0; }
     ol, ul { margin: 0.6rem 0; padding-left: 1.4rem; }
     li { margin: 0.4rem 0; }
-    strong { font-weight: 700; }
+    strong { font-weight: 700; color: var(--heading); }
     a { color: var(--accent); }
     .dl-banner { margin: 0 0 0.6rem; }
     .dl-pdf {
       display: inline-block;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-family: 'Roboto', system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
       font-size: 0.95rem;
       text-decoration: none;
       color: var(--accent);
-      border: 1.5px solid var(--accent);
+      border: 2px solid var(--accent);
       border-radius: 999px;
       padding: 0.4rem 0.95rem;
     }
