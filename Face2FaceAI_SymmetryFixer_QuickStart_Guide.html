@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Face2FaceAI Symmetry Fixer — Quick Start Guide (Premium)</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1C1B1F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* Palette matched to face2faceai.com (dark theme, light text) */
+    :root {
+      --bg:      #1c1b1f;
+      --surface: #2b2930;
+      --fg:      #e8def8;  /* lavender body text */
+      --heading: #ffffff;  /* white title + emphasis */
+      --accent:  #d0bcff;  /* purple */
+      --rule:    rgba(208, 188, 255, 0.14);
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: 'Roboto', system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 1.1rem 1.15rem 3rem;
+      color: var(--fg);
+      background: var(--bg);
+    }
+    header#title-block-header h1.title {
+      font-size: 1.55rem;
+      line-height: 1.25;
+      margin: 0.2rem 0 1.2rem;
+      color: var(--heading);
+    }
+    h2 {
+      font-size: 1.22rem;
+      line-height: 1.3;
+      margin: 1.9rem 0 0.55rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid var(--rule);
+      color: var(--accent);
+    }
+    p { margin: 0.7rem 0; }
+    ol, ul { margin: 0.6rem 0; padding-left: 1.4rem; }
+    li { margin: 0.4rem 0; }
+    strong { font-weight: 700; color: var(--heading); }
+    a { color: var(--accent); }
+    .dl-banner { margin: 0 0 0.6rem; }
+    .dl-pdf {
+      display: inline-block;
+      font-family: 'Roboto', system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      font-size: 0.95rem;
+      text-decoration: none;
+      color: var(--accent);
+      border: 2px solid var(--accent);
+      border-radius: 999px;
+      padding: 0.4rem 0.95rem;
+    }
+    .dl-pdf:active { opacity: 0.6; }
+  </style>
+</head>
+<body>
+<nav class="dl-banner">
+  <a class="dl-pdf" href="Face2FaceAI_SymmetryFixer_QuickStart_Guide.pdf">&#8623; Download printable PDF</a>
+</nav>
+<header id="title-block-header">
+<h1 class="title">Face2FaceAI Symmetry Fixer — Quick Start Guide (Premium)</h1>
+</header>
+<p>Face2FaceAI blends a face from a photo or selfie (the <strong>Original</strong>) with its mirror image (the <strong>Mirror</strong>), then places the blended face (the <strong>Fixed Face</strong>) back into its original photo. You move left to right in the app through three bottom tabs: <strong>Input → Blend → Output</strong>. All processing happens on your device — photos never leave your phone. <strong>Tip:</strong> first time through, long-press any control for an instant explanation, or look up controls by name at any time in the <strong>Help Glossary</strong> in <strong>Settings</strong>.</p>
+<h2 id="tab-1-input">Tab 1 — Input</h2>
+<ol type="1">
+<li><strong>Load your Original</strong> — the face whose symmetry you want to <em>fix</em>. Tap the panel’s upload button → <strong>Gallery</strong> (or Camera).</li>
+<li>A face is detected automatically — <strong>SingleFace Mode</strong> (the default) is intended for photos with one face. For more complex inputs, choose <strong>MultiFace Select Mode</strong> to select one Original face among several, or <strong>Manual Location Mode</strong> to reposition a face-detection <strong>BBox (Bounding Box)</strong>.</li>
+</ol>
+<h2 id="tab-2-blend">Tab 2 — Blend</h2>
+<p>The three previews show your <strong>Mirror Face</strong>, <strong>Original Face</strong>, and <strong>Fixed Face</strong>. Set the sliders, then tap <strong>Run Blend</strong> (a few seconds to process). Before you run a blend with non-zero settings, <strong>Fixed Face</strong> just shows a copy of <strong>Original Face</strong>.</p>
+<ol type="1">
+<li>A recommended starting point for blend sliders is: <strong>Eye Expression 0.5</strong>, <strong>Other Features 0.5</strong>, <strong>Head Position 0.5</strong>, and <strong>Feather Radius 5</strong>.</li>
+<li>If the eyes in <strong>Fixed Face</strong> end up looking the wrong way, but facial symmetry is otherwise improved, try changing <strong>Eye Expression to 0.0</strong> and rerunning.</li>
+<li>If the corrected face looks stiff or blank, try lowering all sliders by the same amount until it looks natural again — even a gentle correction visibly reduces asymmetry.</li>
+<li><strong>Take 2</strong> causes the <strong>Original Face</strong> and <strong>Mirror Face</strong> to be blended using a different algorithm when given the same settings. You can retry the blend with <strong>Take 2</strong> turned both on and off to see which version you like best.</li>
+</ol>
+<p>Re-run as often as you like, adjusting settings in small steps for best results. For additional suggestions about possible fixes, check out <strong>Troubleshooting</strong>, also in <strong>Settings</strong>.</p>
+<h2 id="tab-3-output">Tab 3 — Output</h2>
+<ol type="1">
+<li>Select <strong>Reinsertion Mode</strong> — this places the <strong>Fixed Face</strong> back into your <strong>Original</strong> photo for the most natural-looking result.</li>
+<li>Tap <strong>Finalize</strong>.</li>
+<li>If hair or background looks blurry around the face, or there are hard edges where the face is reinserted, go back and increase <strong>Feather Radius</strong> (Tab 2) by 5. Also increase <strong>Original BBox Size</strong> (Tab 1) by 0.1 or 0.2 if you see a double-exposure artifact. Then re-blend and finalize again.</li>
+<li><strong>Save</strong> or <strong>Share</strong> when you’re happy with it.</li>
+</ol>
+</body>
+</html>
